@@ -21,8 +21,6 @@
  */
 package net.fhirfactory.pegacorn.internals.fhir.r4.codesystems;
 
-import net.fhirfactory.pegacorn.internals.PegacornReferenceProperties;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 

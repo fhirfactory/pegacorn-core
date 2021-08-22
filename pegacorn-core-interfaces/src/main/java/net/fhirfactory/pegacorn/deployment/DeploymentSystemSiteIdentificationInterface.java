@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Mark A. Hunter
+ * Copyright (c) 2020 Mark A. Hunter (ACT Health)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,28 +19,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package net.fhirfactory.pegacorn.internals.fhir.r4.resources.endpoint.factories;
+package net.fhirfactory.pegacorn.deployment;
 
-import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornReferenceProperties;
-import org.hl7.fhir.r4.model.Coding;
+public interface DeploymentSystemSiteIdentificationInterface {
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-
-@ApplicationScoped
-public class EndpointConnectionTypeCodeFactory {
-    private String PEGACORN_ENDPOINT_CODE_SYSTEM = "/endpoint/connection_type";
-
-    @Inject
-    private PegacornReferenceProperties systemWideProperties;
-
-    public Coding newPegacornEndpointJGroupsConnectionCodeSystem(String technologyType, String endpointType) {
-        String codeSystem = systemWideProperties.getPegacornCodeSystemSite() + PEGACORN_ENDPOINT_CODE_SYSTEM;
-        Coding coding = new Coding();
-        coding.setCode(technologyType);
-        coding.setSystem(codeSystem);
-        String codeDisplay = technologyType + "(" + endpointType +" )";
-        coding.setDisplay(codeDisplay);
-        return (coding);
-    }
+    public String getDeploymentSite();
 }

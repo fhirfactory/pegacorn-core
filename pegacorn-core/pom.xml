@@ -17,5 +17,6 @@
 
     <modules>
         <module>../pegacorn-core-fhir</module>
+        <module>../pegacorn-core-interfaces</module>
     </modules>
 </project>

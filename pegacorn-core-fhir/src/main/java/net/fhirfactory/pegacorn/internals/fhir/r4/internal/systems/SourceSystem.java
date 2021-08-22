@@ -23,7 +23,7 @@
  */
 package net.fhirfactory.pegacorn.internals.fhir.r4.internal.systems;
 
-import net.fhirfactory.pegacorn.internals.PegacornReferenceProperties;
+import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornReferenceProperties;
 import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornIdentifierCodeEnum;
 import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornIdentifierCodeSystemFactory;
 import net.fhirfactory.pegacorn.deployment.topology.model.nodes.SubsystemTopologyNode;

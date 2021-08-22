@@ -21,11 +21,11 @@
  */
 package net.fhirfactory.pegacorn.internals.fhir.r4.resources.identifier;
 
-import net.fhirfactory.pegacorn.deployment.properties.codebased.DeploymentSystemIdentificationInterface;
-import net.fhirfactory.pegacorn.deployment.properties.codebased.DeploymentSystemSiteIdentificationInterface;
-import net.fhirfactory.pegacorn.internals.PegacornReferenceProperties;
+import net.fhirfactory.pegacorn.deployment.DeploymentSystemIdentificationInterface;
+import net.fhirfactory.pegacorn.deployment.DeploymentSystemSiteIdentificationInterface;
 import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornIdentifierCodeEnum;
 import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornIdentifierCodeSystemFactory;
+import net.fhirfactory.pegacorn.internals.fhir.r4.codesystems.PegacornReferenceProperties;
 import net.fhirfactory.pegacorn.internals.fhir.r4.internal.systems.DeploymentInstanceDetailInterface;
 import org.hl7.fhir.r4.model.CodeableConcept;
 import org.hl7.fhir.r4.model.Coding;

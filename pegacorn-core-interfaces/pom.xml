@@ -16,10 +16,10 @@
         <relativePath>../pegacorn-core</relativePath>
     </parent>
 
-    <artifactId>pegacorn-core-fhir</artifactId>
+    <artifactId>pegacorn-core-interfaces</artifactId>
     <packaging>jar</packaging>
 
-    <name>Pegacorn :: Core :: FHIR</name>
+    <name>Pegacorn :: Core :: Interfaces</name>
 
     <!--***********************************************************************************-->
     <!--                                                                                   -->
@@ -167,18 +167,6 @@
             <groupId>net.fhirfactory.pegacorn</groupId>
             <artifactId>pegacorn-deployment-cachemap</artifactId>
             <version>${project.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!--*******************************************************************************-->
-        <!-- Pegacorn (Core) Libraries                                                     -->
-        <!--*******************************************************************************-->
-
-        <dependency>
-            <groupId>net.fhirfactory.pegacorn</groupId>
-            <artifactId>pegacorn-core-interfaces</artifactId>
-            <version>${project.version}</version>
-            <type>jar</type>
             <scope>compile</scope>
         </dependency>
 
